@@ -1,8 +1,9 @@
 package helper
 
 import (
-	"github.com/labstack/echo/v4"
 	"net/http"
+
+	"github.com/labstack/echo/v4"
 )
 
 type (
@@ -58,7 +59,6 @@ func ResponseErrorJson(c echo.Context, code int, err error) error {
 	res := errorJson{
 		Error: err.Error(),
 	}
-	c.JSON(code, res)
+	return c.JSON(code, res)
 
-	return err
 }

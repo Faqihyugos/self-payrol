@@ -12,8 +12,32 @@ Lebih detail nya, fitur yang harus dikerjakan adalah:
 
 Untuk menjalankan aplikasi lakukan perintah berikut
 
-1. `cp .env.example .env` dan isi sesuai dengan environtment yang ada di PC kalian
-2. `go mod tidy && go mod vendor`
-3. `go run main.go`
+## Getting Started
 
-Daftar endpoint ada di postman documenter yang di sertakan
+To run the application, follow the instructions below:
+
+1. Clone this repository and navigate to the project directory.
+
+   ```bash
+   git clone https://github.com/szczynk/self-payroll.git
+   ```
+
+1. Create a `.env` file by running `cp .env.example .env`. Then fill in the `.env` file according to your local environment.
+
+   ```bash
+   cp .env.example .env
+   ```
+
+1. Run `go mod tidy && go mod vendor`.
+
+   ```bash
+   go mod tidy && go mod vendor
+   ```
+
+1. Run `go run *.go`.
+
+   ```bash
+   go run *.go
+   ```
+
+The list of endpoints is available in the [documenter](https://documenter.getpostman.com/view/4080490/2s83Ychhk4).
